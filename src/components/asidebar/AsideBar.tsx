@@ -1,4 +1,3 @@
-import { useLocation } from "react-router-dom";
 import CardIcon from "../../assets/icons/CardIcon";
 import ChartIcon from "../../assets/icons/ChartIcon";
 import HomeIcon from "../../assets/icons/HomeIcon";
@@ -8,26 +7,26 @@ import SignInIcon from "../../assets/icons/SignInIcon";
 import WrenchIcon from "../../assets/icons/WrenchIcon";
 import MenuItem from "../menuitem/MenuItem";
 import "./style.scss";
-function AsideBar() {
-  const location = useLocation();
-  console.log(location.pathname);
-
+interface props {
+  location: string;
+}
+function AsideBar({ location }: props) {
   const menuElements = [
     {
       name: "Dashboard",
-      isActive: location.pathname === "/dashboard" ? true : false,
+      isActive: location === "/dashboard" ? true : false,
       icon: <HomeIcon />,
       title: "Dashboard",
     },
     {
       name: "Tables",
-      isActive: location.pathname === "/tables" ? true : false,
+      isActive: location === "/tables" ? true : false,
       icon: <ChartIcon />,
       title: "Tables",
     },
     {
       name: "Billing",
-      isActive: location.pathname === "/billing" ? true : false,
+      isActive: location === "/billing" ? true : false,
       icon: <CardIcon />,
       title: "Billing",
     },
@@ -39,7 +38,7 @@ function AsideBar() {
     },
     {
       name: "Profile",
-      isActive: location.pathname === "/profile" ? true : false,
+      isActive: location === "/profile" ? true : false,
       icon: <ProfileIcon />,
       title: "Profile",
     },
