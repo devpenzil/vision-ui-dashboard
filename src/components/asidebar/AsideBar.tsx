@@ -1,4 +1,4 @@
-import React from "react";
+import { useLocation } from "react-router-dom";
 import CardIcon from "../../assets/icons/CardIcon";
 import ChartIcon from "../../assets/icons/ChartIcon";
 import HomeIcon from "../../assets/icons/HomeIcon";
@@ -9,14 +9,52 @@ import WrenchIcon from "../../assets/icons/WrenchIcon";
 import MenuItem from "../menuitem/MenuItem";
 import "./style.scss";
 function AsideBar() {
+  const location = useLocation();
+  console.log(location.pathname);
+
   const menuElements = [
-    { name: "Dashboard", isActive: true, icon: <HomeIcon /> },
-    { name: "Tables", isActive: false, icon: <ChartIcon /> },
-    { name: "Billing", isActive: false, icon: <CardIcon /> },
-    { name: "RTL", isActive: false, icon: <WrenchIcon /> },
-    { name: "Profile", isActive: false, icon: <ProfileIcon /> },
-    { name: "Sign In", isActive: false, icon: <SignInIcon /> },
-    { name: "Sign up", isActive: false, icon: <RocketIcon /> },
+    {
+      name: "Dashboard",
+      isActive: location.pathname === "/dashboard" ? true : false,
+      icon: <HomeIcon />,
+      title: "Dashboard",
+    },
+    {
+      name: "Tables",
+      isActive: location.pathname === "/tables" ? true : false,
+      icon: <ChartIcon />,
+      title: "Tables",
+    },
+    {
+      name: "Billing",
+      isActive: location.pathname === "/billing" ? true : false,
+      icon: <CardIcon />,
+      title: "Billing",
+    },
+    {
+      name: "RTL",
+      isActive: false,
+      icon: <WrenchIcon />,
+      title: "Not available",
+    },
+    {
+      name: "Profile",
+      isActive: location.pathname === "/profile" ? true : false,
+      icon: <ProfileIcon />,
+      title: "Profile",
+    },
+    {
+      name: "Sign In",
+      isActive: false,
+      icon: <SignInIcon />,
+      title: "Not available",
+    },
+    {
+      name: "Sign up",
+      isActive: false,
+      icon: <RocketIcon />,
+      title: "Not available",
+    },
   ];
   return (
     <aside className="w-[264px] h-screen aside p-3 flex flex-col justify-between ">
@@ -32,6 +70,7 @@ function AsideBar() {
                   label={obj.name}
                   status={obj.isActive}
                   icon={obj.icon}
+                  title={obj.title}
                 />
               </div>
             );
