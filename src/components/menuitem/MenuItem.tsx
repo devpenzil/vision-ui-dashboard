@@ -2,8 +2,9 @@ import React from "react";
 interface props {
   label: string;
   status: boolean;
+  icon: React.ReactNode;
 }
-function MenuItem({ label, status }: props) {
+function MenuItem({ label, status, icon }: props) {
   return (
     <div
       className={
@@ -13,10 +14,12 @@ function MenuItem({ label, status }: props) {
     >
       <div
         className={
-          "w-[30px] h-[30px] bg-[#1A1F37] rounded-lg group-hover:bg-[#0075FF] " +
+          "w-[30px] h-[30px] bg-[#1A1F37] rounded-lg group-hover:bg-[#0075FF] flex justify-center items-center " +
           (status && "bg-[#0075FF]")
         }
-      ></div>
+      >
+        {icon}
+      </div>
       <div className="ml-6">{label}</div>
     </div>
   );
