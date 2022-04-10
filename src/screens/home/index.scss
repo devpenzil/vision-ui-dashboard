@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap");
 .home {
   background: linear-gradient(306.71deg, #0075ff 9.34%, #121241 85.65%),
     linear-gradient(83.76deg, #0052cc 3.4%, #2684ff 96.6%),
@@ -9,5 +10,6 @@
   display: none;
 }
 body {
+  font-family: "Open Sans", sans-serif;
   color: #fff;
 }
