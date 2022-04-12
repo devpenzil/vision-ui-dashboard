@@ -1,8 +1,9 @@
 import React from "react";
-import ReferralTracking from "./homeElements/ReferralTracking";
-import SatisfactionRate from "./homeElements/SatisfactionRate";
-import TopStatus from "./homeElements/TopStatus";
-import Welcomecard from "./homeElements/Welcomecard";
+import ReferralTracking from "./ReferralTracking";
+import SalesOverview from "./SalesOverview";
+import SatisfactionRate from "./SatisfactionRate";
+import TopStatus from "./TopStatus";
+import Welcomecard from "./Welcomecard";
 
 function Home() {
   return (
@@ -15,7 +16,7 @@ function Home() {
           <ReferralTracking />
         </div>
         <div className="grid grid-cols-2 gap-3 ">
-          <div>skljhs</div>
+          <SalesOverview />
           <div>ssfds</div>
         </div>
         <div className="grid grid-cols-2 gap-3">

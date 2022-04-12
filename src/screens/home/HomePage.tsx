@@ -3,10 +3,10 @@ import { Route, Routes } from "react-router-dom";
 import AsideBar from "../../components/asidebar/AsideBar";
 import TopBar from "../../components/topbar/TopBar";
 import "./index.scss";
-import Billing from "./routes/Billing";
-import Home from "./routes/Home";
-import Profile from "./routes/Profile";
-import Tables from "./routes/Tables";
+import Billing from "./routes/billingelements/Billing";
+import Home from "./routes/homeElements/Home";
+import Profile from "./routes/profileelemnets/Profile";
+import Tables from "./routes/tableelements/Tables";
 
 function HomePage() {
   const location = useLocation();
