@@ -14,4 +14,29 @@
     rgba(6, 11, 40, 0.94) 19.41%,
     rgba(10, 14, 35, 0.49) 76.65%
   );
+  .bgcard {
+    background: linear-gradient(
+      126.97deg,
+      rgba(6, 11, 40) 28.26%,
+      rgba(10, 14, 35) 91.2%
+    );
+  }
+}
+.radial-progress {
+  border: 16px solid #060b28;
+  border-radius: 50%;
+  border-top: 16px solid #0075ff;
+  border-right: 16px solid #0075ff;
+  width: 200px;
+  height: 200px;
+  transform: rotate(-100deg);
+}
+.referral-progress {
+  border: 16px solid transparent;
+  border-radius: 50%;
+  border-top: 16px solid #05cd99;
+  border-left: 16px solid #05cd99;
+  border-bottom: 16px solid #05cd99;
+  width: 200px;
+  height: 200px;
 }
