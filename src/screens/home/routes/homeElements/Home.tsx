@@ -1,4 +1,5 @@
 import React from "react";
+import ActiveUsers from "./ActiveUsers";
 import ReferralTracking from "./ReferralTracking";
 import SalesOverview from "./SalesOverview";
 import SatisfactionRate from "./SatisfactionRate";
@@ -9,17 +10,17 @@ function Home() {
   return (
     <div className="mt-6">
       <TopStatus />
-      <div className="mt-6 grid grid-rows-3 gap-3">
-        <div className="grid grid-flow-col gap-3 h-[384px]">
+      <div className="mt-6 flex flex-col space-y-6">
+        <div className="flex flex-row space-x-6 h-[384px]">
           <Welcomecard />
           <SatisfactionRate />
           <ReferralTracking />
         </div>
-        <div className="grid grid-cols-2 gap-3 ">
+        <div className="flex flex-row space-x-6 h-[384px] ">
           <SalesOverview />
-          <div>ssfds</div>
+          <ActiveUsers />
         </div>
-        <div className="grid grid-cols-2 gap-3">
+        <div className="flex flex-row space-x-6 h-[384px]">
           <div>skljhs</div>
           <div>ssfds</div>
         </div>

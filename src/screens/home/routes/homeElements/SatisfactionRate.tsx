@@ -2,7 +2,7 @@ import React from "react";
 import "./style.scss";
 function SatisfactionRate() {
   return (
-    <div className="w-[350px] h-full rounded-3xl bg-white p-6 satisfacion-card">
+    <div className="min-w-[350px] h-full rounded-3xl bg-white p-6 satisfacion-card">
       <div className="text-lg font-bold">Satisfaction Rate</div>
       <div className="text-sm font-semibold text-gray-400">
         From all projects

@@ -1,6 +1,6 @@
 import React from "react";
 
-function CartIcon() {
+function CartIcon(props: any) {
   return (
     <>
       <svg
@@ -9,6 +9,7 @@ function CartIcon() {
         viewBox="0 0 24 23"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
+        {...props}
       >
         <path
           d="M8.48438 19.9374C9.26103 19.9374 9.89062 19.3078 9.89062 18.5311C9.89062 17.7545 9.26103 17.1249 8.48438 17.1249C7.70772 17.1249 7.07812 17.7545 7.07812 18.5311C7.07812 19.3078 7.70772 19.9374 8.48438 19.9374Z"

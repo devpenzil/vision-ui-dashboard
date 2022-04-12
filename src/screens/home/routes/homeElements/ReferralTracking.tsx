@@ -3,7 +3,7 @@ import ThreeDotIcon from "../../../../assets/icons/ThreeDotIcon";
 
 function ReferralTracking() {
   return (
-    <div className="w-[551px] h-full satisfacion-card rounded-3xl p-6 ">
+    <div className="min-w-[551px] h-full satisfacion-card rounded-3xl p-6 ">
       <div className="flex justify-between items-center">
         <div className="text-lg font-bold">Referral Tracking</div>
         <div className="w-[37px] h-[37px] rounded-xl bg-[#7551FF50] flex justify-center items-center cursor-pointer">
