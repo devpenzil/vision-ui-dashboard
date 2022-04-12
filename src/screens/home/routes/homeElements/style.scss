@@ -40,3 +40,6 @@
   width: 200px;
   height: 200px;
 }
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
