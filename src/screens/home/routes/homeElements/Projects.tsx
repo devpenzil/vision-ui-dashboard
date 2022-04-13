@@ -32,7 +32,7 @@ function Projects() {
       icon: <Slack />,
       members: [avt1, avt5],
       budget: "	Not set",
-      completion: 600,
+      completion: 60,
     },
     {
       name: "Launch our Mobile App",
@@ -57,7 +57,7 @@ function Projects() {
     },
   ];
   return (
-    <div className="satisfacion-card h-full w-[1057px] rounded-2xl p-6 overflow-x-hidden no-scrollbar">
+    <div className="satisfacion-card h-full min-w-[1057px] rounded-2xl p-6 overflow-x-hidden no-scrollbar">
       <div>
         <div className="text-lg font-bold">Project</div>
         <div className="text-sm font-semibold text-gray-400 ">
