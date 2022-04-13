@@ -18,6 +18,7 @@ function HomePage() {
       <div className="container mx-auto p-4 h-screen overflow-y-scroll no-scroll">
         <TopBar location={location.pathname} />
         <Routes>
+          <Route path="" element={<Home />} />
           <Route path="dashboard" element={<Home />} />
           <Route path="tables" element={<Tables />} />
           <Route path="billing" element={<Billing />} />
